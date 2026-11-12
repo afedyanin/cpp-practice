@@ -1,0 +1,12 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Folder Name="/common/">
+    <File Path="README.md" />
+  </Folder>
+  <Folder Name="/src/">
+    <Project Path="src/ConsoleApp/ConsoleApp.vcxproj" Id="e37d0712-785a-42ff-a8d4-ea4050d44b65" />
+  </Folder>
+</Solution>
