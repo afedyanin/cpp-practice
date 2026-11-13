@@ -8,6 +8,7 @@
   </Folder>
   <Folder Name="/docs/">
     <File Path="docs/style_guides.md" />
+    <File Path="docs/представимые_числа.md" />
   </Folder>
   <Folder Name="/src/">
     <Project Path="src/ConsoleApp/ConsoleApp.vcxproj" Id="e37d0712-785a-42ff-a8d4-ea4050d44b65" />

@@ -1,8 +1,141 @@
 #include <iostream>
+#include <string>
 #include <cmath>
 #include <windows.h>
 
 #include "Topic01.h"
+
+void sample13()
+{
+    int num1;
+    int num2;
+    std::cin >> num1 >> num2;
+
+    int sum = num1 + num2;
+    std::string line = std::to_string(num1) + std::to_string(num2);
+    int lineNum = std::stoi(line);
+
+    std::cout << sum << std::endl << line << std::endl << lineNum - sum << std::endl;
+}
+
+
+void sample12()
+{
+    std::string line;
+    std::getline(std::cin, line);
+    int index;
+    char sym;
+    std::cin >> index;
+    std::cin >> sym;
+    line[index] = sym;
+    std::cout <<  line << std::endl;
+}
+
+
+void sample11()
+{
+    std::string line;
+    std::getline(std::cin, line);
+    int index;
+    std::cin >> index;
+    std::cout << line[index -1] << line[index] << line[index + 1] << std::endl;
+}
+
+int sample10()
+{
+    int week_day;
+    int days_left;
+    std::cin >> week_day >> days_left;
+    int weeks = days_left % 7;
+    int today = (week_day + days_left - 1) % 7 + 1;
+    std::cout << weeks << std::endl << today << std::endl;
+
+    return 0;
+}
+
+
+int sample09()
+{
+    int count;
+
+    std::cin >> count;
+    std::cout << "Эники, беники ели вареники," << std::endl;
+    std::cout << "Эники, беники съели вареники," << std::endl;
+    std::cout << "Эники, беники, хоп!" << std::endl;
+    std::cout << 10 % count << std::endl;
+
+    return 0;
+}
+
+
+int sample08()
+{
+    double length, width, high;
+    double l2, w2;
+
+    std::cin >> length >> width >> high;
+    std::cin >> l2 >> w2;
+
+    double s_room = (length * high + width * high) * 2;
+    double s2 = l2 * w2;
+    double count = std::ceil(s_room / s2);
+
+    std::cout << count << std::endl;
+
+    return 0;
+}
+
+
+int sample07()
+{
+    double price1, price2, price3, price4;
+    int count;
+    double amount = 0;
+
+    double p1 = 0.15;
+    double p2 = 0.05;
+    double p3 = 0.05;
+    double p4 = 0.1;
+
+    std::cout << "Тыква" << std::endl;
+    std::cin >> price1;
+
+    std::cout << "Лук" << std::endl;
+    std::cin >> price2;
+
+    std::cout << "Морковь" << std::endl;
+    std::cin >> price3;
+
+    std::cout << "Кокосовое молоко" << std::endl;
+    std::cin >> price4;
+
+    std::cout << "Количество порций" << std::endl;
+    std::cin >> count;
+
+    amount = (price1 * p1) + (price2 * p2) + (price3 * p3) + +(price4 * p4);
+    amount *= count;
+
+    std::cout << "Стоимость: " << amount << std::endl;
+
+    return 0;
+}
+
+
+int sample06()
+{
+    int start;
+    int increment;
+    int count;
+
+    std::cin >> start >> increment >> count;
+
+    int end = start + (increment * (count - 1));
+    int sum = (start + end) * count / 2;
+
+    std::cout << end << std::endl << sum << std::endl;
+
+    return 0;
+}
 
 int sample05()
 {
