@@ -6,6 +6,46 @@
 
 #include "Topic02.h"
 
+/*
+Напишите программу, которая принимает на вход три числа: int amount, double rate, int term — и выдаёт в ответ построчно четыре числа в формате 
+Месяц: N Платёж: month_payment Проценты: percent_part Долг: debt_part.
+Перед каждым числом и после него должен быть ровно один пробел, нумерация месяцев N начинается с единицы.
+*/
+int credit_calc()
+{
+    int amount;
+    double rate;
+    int term;
+    std::cin >> amount >> rate >> term;
+
+    double monthly_rate = rate / (12.0 * 100.0);
+    double month_payment = 0.0;
+
+    if (monthly_rate > 0.0) {
+        double factor = std::pow(1.0 + monthly_rate, term);
+        month_payment = amount * (monthly_rate * factor) / (factor - 1.0);
+    }
+    else {
+        month_payment = static_cast<double>(amount) / term;
+    }
+
+    double remaining_debt = amount;
+
+    for (int n = 1; n <= term; ++n) {
+        double percent_part = remaining_debt * monthly_rate;
+        double debt_part = month_payment - percent_part;
+        remaining_debt -= debt_part;
+
+        std::cout << "Месяц: " << n
+            << " Платёж: " << month_payment
+            << " Проценты: " << percent_part
+            << " Долг: " << debt_part << '\n';
+    }
+
+    return 0;
+}
+
+
 int sample_calc()
 {
     double a, b;
