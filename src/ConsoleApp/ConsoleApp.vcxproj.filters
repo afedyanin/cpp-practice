@@ -24,12 +24,24 @@
     <ClCompile Include="Topic02.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Calc01.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ConvertNotation.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SvitchCase.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Topic01.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Topic02.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Calc01.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

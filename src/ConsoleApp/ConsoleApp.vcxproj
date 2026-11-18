@@ -140,14 +140,18 @@
     </Manifest>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Calc01.cpp" />
     <ClCompile Include="ConsoleApp.cpp">
       <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
       </AdditionalOptions>
     </ClCompile>
+    <ClCompile Include="ConvertNotation.cpp" />
+    <ClCompile Include="SvitchCase.cpp" />
     <ClCompile Include="Topic01.cpp" />
     <ClCompile Include="Topic02.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Calc01.h" />
     <ClInclude Include="Topic01.h" />
     <ClInclude Include="Topic02.h" />
   </ItemGroup>
